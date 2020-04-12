@@ -2,8 +2,8 @@ section {
     padding: 20px;
 }
 
-.btn a {
-    color: #fff;
+.jumbotron {
+    text-align: center;
 }
 
 .btn a:hover {
@@ -11,8 +11,18 @@ section {
     text-decoration: none;
 }
 
+.btn {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+}
+
 .row {
     list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .post-container {
