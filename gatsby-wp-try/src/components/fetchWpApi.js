@@ -25,9 +25,6 @@ class Fetcher extends Component  {
         })).catch(errors => {
             console.log(errors);
           })
-        // .then((data) =>  {
-        //     this.setState({saveData: data.data, hasLoaded: true})
-        // });
     }
 
     render() {
