@@ -1,0 +1,44 @@
+section {
+    padding: 20px;
+}
+
+.btn a {
+    color: #fff;
+}
+
+.btn a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.row {
+    list-style-type: none;
+}
+
+.post-container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.post-grid {
+    list-style-type: none;
+}
+
+.posts {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid rgb(148, 141, 141);
+    border-radius: 4px;
+    max-width: 60%;
+    margin: auto;
+}
+
+.comments {
+    max-width: 40%;
+    margin: auto;
+    padding: 15px;
+}
+
+.comments-img img {
+    width: 200px;
+}
