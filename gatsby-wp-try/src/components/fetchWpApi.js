@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
-// import GetTodos from '../components/newFetch';
 import axios from 'axios';
 
-class Fetcher extends Component  {
+class App extends Component  {
     constructor(props) {
         super(props)
         this.state = {
@@ -38,9 +37,7 @@ class Fetcher extends Component  {
                         <ul className="row">
                             { savePosts.map(value =>
                             <li className="card mb-4 box-shadow" key={ value.id }>
-                                <button className="btn btn-info">
-                                    <Link to={`/post`} state={{ postId: value.id, getPosts: savePosts, getComments: saveComments }} >{ value.title.rendered.replace(regex, ' ') }</Link>
-                                </button>
+                                <Link className="btn btn-info" to={`/post`} state={{ postId: value.id, getPosts: savePosts, getComments: saveComments }} >{ value.title.rendered.replace(regex, ' ') }</Link>
                             </li>) }
                         </ul>
                     ) : 'Loading...'
@@ -50,4 +47,4 @@ class Fetcher extends Component  {
     }
 }
 
-export default Fetcher;
+export default App;
