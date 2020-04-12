@@ -1,0 +1,16 @@
+section {
+    padding: 20px;
+}
+
+.btn a {
+    color: #fff;
+}
+
+.btn a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.row {
+    list-style-type: none;
+}
