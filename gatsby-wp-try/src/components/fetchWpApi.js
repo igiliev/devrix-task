@@ -13,10 +13,10 @@ class App extends Component  {
     }
 
     componentDidMount() {
-        const posts = "http://localhost/wordpress/wordpress/wp-json/wp/v2/posts";
-        const comments = "http://localhost/wordpress/wordpress/wp-json/wp/v2/comments";
-        const requesPosts = axios.get(posts);
-        const requesCommets = axios.get(comments);
+        const postsUrl = "http://localhost/wordpress/wordpress/wp-json/wp/v2/posts";
+        const commentsUrl = "http://localhost/wordpress/wordpress/wp-json/wp/v2/comments";
+        const requesPosts = axios.get(postsUrl);
+        const requesCommets = axios.get(commentsUrl);
         axios.all([requesPosts, requesCommets]).then(axios.spread((...responses) => {
             const savePosts = responses[0].data;
             const saveComments = responses[1].data; 

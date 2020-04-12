@@ -45,8 +45,10 @@ section {
 
 .comments {
     max-width: 40%;
-    margin: auto;
+    margin: 30px auto;
     padding: 15px;
+    box-shadow:1px 1px 8px #000;
+    border-radius: 5px;
 }
 
 .comments-img img {
